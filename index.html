@@ -10,7 +10,7 @@
     <header class="container">
 
       <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo da Alura" class="alura-logo">
       </a>
 
       <h1 class="page-title">
@@ -24,15 +24,15 @@
 
     <section class="calculator">
       <div class="grades">
-        <p>Primeira Nota: <input type="number" id="grade1" name="grade1"></p>
-        <p>Segunda Nota: <input type="number" id="grade2" name="grade2"></p>
-        <p>Terceira Nota: <input type="number" id="grade3" name="grade3"></p>
-        <p>Quarta Nota: <input type="number" id="grade4" name="grade4"></p>
+        <p>Primeira Nota: <input type="number" min="0" max="10" id="grade1" name="grade1" placeholder="0.0" ></p>
+        <p>Segunda Nota: <input type="number" min="0" max="10" id="grade2" name="grade2" placeholder="0.0" ></p>
+        <p>Terceira Nota: <input type="number" min="0" max="10" id="grade3" name="grade3" placeholder="0.0" ></p>
+        <p>Quarta Nota: <input type="number" min="0" max="10" id="grade4" name="grade4" placeholder="0.0" ></p>
       </div>
 
       <div class="final">
-        Média Final<br>
-        <button type="button" id="calc" onclick="calcAverage()">Calcular</button>
+        <p>Média Final</p><br>
+        <button type="submit" id="calc" onclick="calcAverage()">Calcular</button>
         <script src="grade-average.js"></script>
         <p id="gradeAverage"></p>
         <p id="gradeInfo"></p>

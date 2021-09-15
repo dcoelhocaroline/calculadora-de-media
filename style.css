@@ -28,7 +28,7 @@ header, body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: top;
     padding-top: 24px;
 }
 
@@ -60,24 +60,23 @@ header, body {
 
 .final{
     width: 300px;
-    padding-top: 24px;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    
+    justify-content: flex-start;
+    margin: 0px;
 }
 
 button {
     transition: 0.3s ease;
-    font-family: 'Roboto Mono',monospace;
-    font-weight: 700;
-    font-size: 16px;
+    background-color: #fada06;
     width: 160px;
     padding: 8px;
-    background-color: #fada06;
-    text-align: center;
-    margin-top: 16px;
     border: none;
+    font-family: 'Roboto Mono',monospace;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
 }
 
 button:hover{
@@ -86,7 +85,7 @@ button:hover{
     cursor:pointer;
 }
 
-button:active{
+button:active, :focus-visible{
     transition: 0.3s ease;
     box-shadow: none;
     cursor:pointer;
