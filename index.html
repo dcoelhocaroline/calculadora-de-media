@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Imersão Dev Alura - Aula 01</title>
+    <meta charset="UTF-8">
+    <title>Calculadora de Média</title>
     <link rel="stylesheet" href="style.css"></link>
-    <script type="text/javascript" src="grade-average.js"></script>
   </head>
 
   <body>
@@ -30,11 +30,15 @@
         <p>Quarta Nota: <input type="number" id="grade4" name="grade4"></p>
       </div>
 
-      <div class="result">
-        Média Final
+      <div class="final">
+        Média Final<br>
+        <button type="button" id="calc" onclick="calcAverage()">Calcular</button>
+        <script src="grade-average.js"></script>
+        <p id="gradeAverage"></p>
+        <p id="gradeInfo"></p>
       </div>
+      
   </section>
-
   </body>
 
 </html>
